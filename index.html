@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terres Infinies</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 150px;
+            text-align: center;
+            /* Ajout de la propriété background-image pour le choix de l'image de fond */
+            background-image: url('Hublot.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .destination {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+        .destination-item {
+            text-align: center;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .destination-item img {
+            width: 100%;
+            border-radius: 10px; /* Arrondi des bords de l'image */
+            margin-bottom: 0px;
+        }
+        form {
+            margin: 50px auto;
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form textarea {
+            height: 100px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .image-text {
+            display: flex;
+            align-items: center; /* Alignement vertical des éléments */
+            justify-content: center;
+            padding: 100px 0;
+            text-align: center;
+            margin: 0 15%; /* Espaces vides égaux à gauche et à droite */
+        }
+
+        .image-text img {
+            width: 120%; /* Ajustez la largeur de l'image selon vos besoins */
+            max-width: 500px; /* Ajustez la largeur maximale de l'image selon vos besoins */
+            margin-right: 20px;
+            border-radius: 10px; /* Arrondi des bords de l'image */
+        }
+
+        .image-text-content {
+            text-align: justify ;
+        }
+
+        .image-text-content h2 {
+            font-size: 2.2em; 
+            margin-bottom:0px;
+        }
+
+        .image-text-content p {
+            font-size: 1.0em; 
+        }
+        .header-cta {
+            margin-top: 10px;
+        }
+        .header-cta button {
+            background-color: #E0823D; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+        .header-cta button:hover {
+            background-color: #FFA500; 
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 70px;
+            text-align: center;
+        }
+        footer h2 {
+            margin-bottom: 10px;
+        }
+        footer p {
+            margin-bottom: 20px;
+        }
+        .footer-cta {
+            margin-top: 20px;
+        }
+        .footer-cta button {
+            background-color: #E0823D; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+        .footer-cta button:hover {
+            background-color: #FFA500; 
+        }
+        .customer-reviews {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .customer-reviews h2 {
+            margin-bottom: 20px;
+        }
+        .customer-review {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .customer-review p {
+            margin-left: 20px;
+            flex: 1;
+        }
+        .customer-review img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .customer-review-info {
+            margin-left: 20px;
+            text-align: right;
+        }
+        .customer-review-info em {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terres infinies</h1>
+        <p>Voyagez vers vos destinations de rêve avec nous !</p>
+        <div class="header-cta">
+            <button>Explorez nos offres</button>
+        </div>
+    </header>
+
+    <section class="image-text">
+        <img src="Paysage voyage.jpg" alt="Paysage voyage">
+        <div class="image-text-content">
+            <h2>Explorez le monde avec passion</h2>
+            <p>Chez Terres Infinies, notre passion pour le voyage va au-delà des simples itinéraires. Nous sommes des explorateurs dans l'âme, désireux de vous emmener vers des destinations fascinantes et des expériences authentiques. Nous sommes là pour transformer vos rêves en réalité, en vous offrant des voyages sur mesure qui captivent vos sens et élargissent vos horizons.</p>
+            <p>Que vous recherchiez une escapade relaxante sur une plage isolée ou une aventure épique dans des contrées lointaines, nous sommes là pour vous guider à chaque étape de votre voyage.</p>
+            <p>Avec Terres Infinies, chaque voyage devient une aventure inoubliable.</p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">Découvrez nos 3 destinations phares !</h2>
+    <section class="destination">
+        <div class="destination-item">
+            <img src="Paris 2.jpg" alt="Paris">
+            <h2>Paris</h2>
+            <p>Découvrez la Ville Lumière avec ses monuments emblématiques.</p>
+            <button style="background-color: #E0823D; color: white; padding: 10px 20px; border: none; border-radius: 5px;">En savoir plus</button>
+        </div>
+        <div class="destination-item">
+            <img src="Madrid.jpg" alt="Madrid">
+            <h2>Madrid</h2>
+            <p>Plongez dans la culture espagnole vibrante et savourez la délicieuse cuisine.</p>
+            <button style="background-color: #E0823D; color: white; padding: 10px 20px; border: none; border-radius: 5px;">En savoir plus</button>
+        </div>
+        <div class="destination-item">
+            <img src="Galerie Milan.jpg" alt="Milan">
+            <h2>Milan</h2>
+            <p>Explorez la mode et le design dans la capitale italienne de la mode.</p>
+            <button style="background-color: #E0823D; color: white; padding: 10px 20px; border: none; border-radius: 5px;">En savoir plus</button>
+        </div>
+    </section>
+
+    <section class="customer-reviews">
+        <h2>Avis clients</h2>
+        <div class="customer-review">
+            <img src="Selfie milan.jpg" alt="Client Milan">
+            <p>"Mon voyage à Milan avec Terres Infinies a été tout simplement extraordinaire. La ville est d'une beauté à couper le souffle, et notre guide était exceptionnellement compétent. Chaque moment était une découverte, mêlant histoire et modernité. J'ai adoré chaque minute de mon séjour et je suis déjà impatient de revenir."</p>
+        </div>
+        <div class="customer-review">
+            <img src="Selefie madrid.jpg" alt="Client Madrid">
+            <p>"Mon voyage à Madrid avec Terres Infinies a été incroyable. La diversité de la cuisine, la richesse culturelle et l'atmosphère animée ont dépassé toutes mes attentes. Chaque moment était une nouvelle découverte, une aventure inoubliable. Je prévois déjà mon prochain séjour avec impatience !"</p>
+        </div>
+    </section>
+
+    <h3 style="text-align: center;">Contactez-nous</h3>
+
+    <form action="#" method="post">
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <footer>
+        <h2>Restez en contact</h2>
+        <p>Rejoignez-nous pour rester informé de nos offres spéciales et des dernières nouvelles !</p>
+        <div class="footer-cta">
+            <button>S'inscrire à la newsletter</button>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
